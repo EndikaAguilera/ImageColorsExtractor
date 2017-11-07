@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Image Colors Extractor</string>
+    <string name="next">Next Image</string>
+    <string name="images_source">Images from freeimages.com</string>
+</resources>

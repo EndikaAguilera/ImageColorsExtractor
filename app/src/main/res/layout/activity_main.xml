@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/images_source_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:autoLink="all"
+        android:gravity="center"
+        android:padding="@dimen/card_view_margin"
+        android:text="@string/images_source"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <ImageView
+        android:id="@+id/main_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:paddingBottom="10dp"
+        android:paddingEnd="100dp"
+        android:paddingStart="100dp"
+        android:paddingTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_01" />
+
+    <Button
+        android:id="@+id/next_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:onClick="showNextImage"
+        android:text="@string/next" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</LinearLayout>
